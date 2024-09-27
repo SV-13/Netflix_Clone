@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)2!z4#bprn7gt#o!2-df&7uic)4c5e5u12-r36lc=d!iolqkot
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["https://netflix-clone-delta-topaz.vercel.app/"]
 
 
 # Application definition

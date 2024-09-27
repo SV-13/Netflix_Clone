@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: netflix-clone
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate
+    startCommand: gunicorn netflix_site.wsgi:application --bind 0.0.0.0:$PORT
